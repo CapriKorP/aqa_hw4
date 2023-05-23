@@ -83,7 +83,7 @@ public class CardDeliveryServiceTest {
         $("[data-test-id='date'] input").doubleClick().sendKeys(Keys.BACK_SPACE);
         $("[data-test-id='date'] input").setValue(generateDate(days));
         $("[data-test-id='name'] input").setValue("Иванов Иван");
-        $("[data-test-id='phone'] input").setValue("+79998881234");
+        //$("[data-test-id='phone'] input").setValue("+79998881234");
         // $("[data-test-id='agreement']").click();
         $$("button").find(exactText("Забронировать")).click();
         $x("//label[@data-test-id='agreement'][contains(@class, 'input_invalid')]").should(appear);
